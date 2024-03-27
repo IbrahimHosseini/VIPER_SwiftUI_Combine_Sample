@@ -32,4 +32,8 @@ class TripListPresenter: ObservableObject {
     func addNewTrip() {
         interractor.addNewTrip()
     }
+    
+    func deleteTrip(_ index: IndexSet) {
+        interractor.deleteTrip(index)
+    }
 }
