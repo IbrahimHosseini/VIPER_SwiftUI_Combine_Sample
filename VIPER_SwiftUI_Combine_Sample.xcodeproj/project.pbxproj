@@ -8,17 +8,43 @@
 
 /* Begin PBXBuildFile section */
 		A5206C932BB41DB000A660E4 /* VIPER_SwiftUI_Combine_SampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5206C922BB41DB000A660E4 /* VIPER_SwiftUI_Combine_SampleApp.swift */; };
-		A5206C952BB41DB000A660E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5206C942BB41DB000A660E4 /* ContentView.swift */; };
+		A5206C952BB41DB000A660E4 /* TripListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5206C942BB41DB000A660E4 /* TripListView.swift */; };
 		A5206C972BB41DB200A660E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5206C962BB41DB200A660E4 /* Assets.xcassets */; };
 		A5206C9A2BB41DB200A660E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5206C992BB41DB200A660E4 /* Preview Assets.xcassets */; };
+		A5206CA22BB4234100A660E4 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5206CA12BB4234100A660E4 /* Trip.swift */; };
+		A5206CA42BB4238D00A660E4 /* Waypoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5206CA32BB4238D00A660E4 /* Waypoint.swift */; };
+		A5206CA72BB4266000A660E4 /* MapDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5206CA62BB4266000A660E4 /* MapDataProvider.swift */; };
+		A5206CA92BB42AED00A660E4 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5206CA82BB42AED00A660E4 /* DataModel.swift */; };
+		A5206CAB2BB42B3A00A660E4 /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5206CAA2BB42B3A00A660E4 /* Persistance.swift */; };
+		A5206CAF2BB4322D00A660E4 /* TripListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5206CAE2BB4322D00A660E4 /* TripListInteractor.swift */; };
+		A5206CB22BB432D700A660E4 /* TripListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5206CB12BB432D700A660E4 /* TripListPresenter.swift */; };
+		A5206CB62BB4355000A660E4 /* TripListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5206CB52BB4355000A660E4 /* TripListCell.swift */; };
+		A5206CB82BB4358C00A660E4 /* ImageDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5206CB72BB4358C00A660E4 /* ImageDataProvider.swift */; };
+		A5206CBA2BB4382E00A660E4 /* SplitImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5206CB92BB4382E00A660E4 /* SplitImage.swift */; };
+		A5206CBC2BB4390500A660E4 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5206CBB2BB4390500A660E4 /* MapView.swift */; };
+		A5206CBE2BB43CD900A660E4 /* default.json in Resources */ = {isa = PBXBuildFile; fileRef = A5206CBD2BB43CD900A660E4 /* default.json */; };
+		A5206CC02BB441A800A660E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5206CBF2BB441A800A660E4 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A5206C8F2BB41DB000A660E4 /* VIPER_SwiftUI_Combine_Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPER_SwiftUI_Combine_Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5206C922BB41DB000A660E4 /* VIPER_SwiftUI_Combine_SampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPER_SwiftUI_Combine_SampleApp.swift; sourceTree = "<group>"; };
-		A5206C942BB41DB000A660E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A5206C942BB41DB000A660E4 /* TripListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListView.swift; sourceTree = "<group>"; };
 		A5206C962BB41DB200A660E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5206C992BB41DB200A660E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A5206CA12BB4234100A660E4 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		A5206CA32BB4238D00A660E4 /* Waypoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waypoint.swift; sourceTree = "<group>"; };
+		A5206CA62BB4266000A660E4 /* MapDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDataProvider.swift; sourceTree = "<group>"; };
+		A5206CA82BB42AED00A660E4 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		A5206CAA2BB42B3A00A660E4 /* Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
+		A5206CAE2BB4322D00A660E4 /* TripListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListInteractor.swift; sourceTree = "<group>"; };
+		A5206CB12BB432D700A660E4 /* TripListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListPresenter.swift; sourceTree = "<group>"; };
+		A5206CB52BB4355000A660E4 /* TripListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListCell.swift; sourceTree = "<group>"; };
+		A5206CB72BB4358C00A660E4 /* ImageDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataProvider.swift; sourceTree = "<group>"; };
+		A5206CB92BB4382E00A660E4 /* SplitImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitImage.swift; sourceTree = "<group>"; };
+		A5206CBB2BB4390500A660E4 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		A5206CBD2BB43CD900A660E4 /* default.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = default.json; sourceTree = "<group>"; };
+		A5206CBF2BB441A800A660E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +77,16 @@
 		A5206C912BB41DB000A660E4 /* VIPER_SwiftUI_Combine_Sample */ = {
 			isa = PBXGroup;
 			children = (
-				A5206C922BB41DB000A660E4 /* VIPER_SwiftUI_Combine_SampleApp.swift */,
-				A5206C942BB41DB000A660E4 /* ContentView.swift */,
+				A5206CBD2BB43CD900A660E4 /* default.json */,
+				A5206CB42BB4351700A660E4 /* FunctionalView */,
+				A5206CB02BB432C400A660E4 /* Presenter */,
+				A5206CAD2BB4320A00A660E4 /* Interactor */,
 				A5206C962BB41DB200A660E4 /* Assets.xcassets */,
+				A5206CB32BB4342C00A660E4 /* View */,
+				A5206CA52BB4264200A660E4 /* DataSource */,
+				A5206CA02BB4233200A660E4 /* Entities */,
 				A5206C982BB41DB200A660E4 /* Preview Content */,
+				A5206C922BB41DB000A660E4 /* VIPER_SwiftUI_Combine_SampleApp.swift */,
 			);
 			path = VIPER_SwiftUI_Combine_Sample;
 			sourceTree = "<group>";
@@ -65,6 +97,61 @@
 				A5206C992BB41DB200A660E4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A5206CA02BB4233200A660E4 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				A5206CA12BB4234100A660E4 /* Trip.swift */,
+				A5206CA32BB4238D00A660E4 /* Waypoint.swift */,
+				A5206CA82BB42AED00A660E4 /* DataModel.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		A5206CA52BB4264200A660E4 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				A5206CA62BB4266000A660E4 /* MapDataProvider.swift */,
+				A5206CAA2BB42B3A00A660E4 /* Persistance.swift */,
+				A5206CB72BB4358C00A660E4 /* ImageDataProvider.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		A5206CAD2BB4320A00A660E4 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A5206CAE2BB4322D00A660E4 /* TripListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A5206CB02BB432C400A660E4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A5206CB12BB432D700A660E4 /* TripListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A5206CB32BB4342C00A660E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5206C942BB41DB000A660E4 /* TripListView.swift */,
+				A5206CBF2BB441A800A660E4 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A5206CB42BB4351700A660E4 /* FunctionalView */ = {
+			isa = PBXGroup;
+			children = (
+				A5206CB52BB4355000A660E4 /* TripListCell.swift */,
+				A5206CB92BB4382E00A660E4 /* SplitImage.swift */,
+				A5206CBB2BB4390500A660E4 /* MapView.swift */,
+			);
+			path = FunctionalView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +212,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5206CBE2BB43CD900A660E4 /* default.json in Resources */,
 				A5206C9A2BB41DB200A660E4 /* Preview Assets.xcassets in Resources */,
 				A5206C972BB41DB200A660E4 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +225,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5206C952BB41DB000A660E4 /* ContentView.swift in Sources */,
+				A5206CAB2BB42B3A00A660E4 /* Persistance.swift in Sources */,
+				A5206CAF2BB4322D00A660E4 /* TripListInteractor.swift in Sources */,
+				A5206CC02BB441A800A660E4 /* ContentView.swift in Sources */,
+				A5206CA42BB4238D00A660E4 /* Waypoint.swift in Sources */,
+				A5206CB22BB432D700A660E4 /* TripListPresenter.swift in Sources */,
+				A5206CBC2BB4390500A660E4 /* MapView.swift in Sources */,
+				A5206CB82BB4358C00A660E4 /* ImageDataProvider.swift in Sources */,
+				A5206CB62BB4355000A660E4 /* TripListCell.swift in Sources */,
+				A5206CBA2BB4382E00A660E4 /* SplitImage.swift in Sources */,
+				A5206CA22BB4234100A660E4 /* Trip.swift in Sources */,
+				A5206CA72BB4266000A660E4 /* MapDataProvider.swift in Sources */,
+				A5206C952BB41DB000A660E4 /* TripListView.swift in Sources */,
 				A5206C932BB41DB000A660E4 /* VIPER_SwiftUI_Combine_SampleApp.swift in Sources */,
+				A5206CA92BB42AED00A660E4 /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
