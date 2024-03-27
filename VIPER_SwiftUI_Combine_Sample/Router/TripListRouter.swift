@@ -9,13 +9,16 @@ import SwiftUI
 
 class TripListRouter {
     func makeDetailView(for trip: Trip, model: DataModel) -> some View {
-        let presenter = TripDetailPresenter(
-            interactor: TripDetailInteractor(
-                trip: trip,
-                model: model,
-                mapInfoProvider: RealMapDataProvider()
-            )
+        
+        let mapProvider = RealMapDataProvider()
+        
+        let interractor = TripDetailInteractor(
+            trip: trip,
+            model: model,
+            mapInfoProvider: mapProvider
         )
+        
+        let presenter = TripDetailPresenter(interactor: interractor)
         
         return TripDetailView(presenter: presenter)
     }
