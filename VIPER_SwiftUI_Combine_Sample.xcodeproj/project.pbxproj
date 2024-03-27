@@ -24,6 +24,10 @@
 		A5206CBC2BB4390500A660E4 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5206CBB2BB4390500A660E4 /* MapView.swift */; };
 		A5206CBE2BB43CD900A660E4 /* default.json in Resources */ = {isa = PBXBuildFile; fileRef = A5206CBD2BB43CD900A660E4 /* default.json */; };
 		A5206CC02BB441A800A660E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5206CBF2BB441A800A660E4 /* ContentView.swift */; };
+		A5206CC22BB4592900A660E4 /* TripDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5206CC12BB4592900A660E4 /* TripDetailInteractor.swift */; };
+		A5206CC42BB459C000A660E4 /* TripDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5206CC32BB459C000A660E4 /* TripDetailPresenter.swift */; };
+		A5206CC62BB45A3600A660E4 /* TripDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5206CC52BB45A3600A660E4 /* TripDetailView.swift */; };
+		A5206CC92BB45B3500A660E4 /* TripListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5206CC82BB45B3500A660E4 /* TripListRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +49,10 @@
 		A5206CBB2BB4390500A660E4 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		A5206CBD2BB43CD900A660E4 /* default.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = default.json; sourceTree = "<group>"; };
 		A5206CBF2BB441A800A660E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A5206CC12BB4592900A660E4 /* TripDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailInteractor.swift; sourceTree = "<group>"; };
+		A5206CC32BB459C000A660E4 /* TripDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailPresenter.swift; sourceTree = "<group>"; };
+		A5206CC52BB45A3600A660E4 /* TripDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailView.swift; sourceTree = "<group>"; };
+		A5206CC82BB45B3500A660E4 /* TripListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,15 +85,16 @@
 		A5206C912BB41DB000A660E4 /* VIPER_SwiftUI_Combine_Sample */ = {
 			isa = PBXGroup;
 			children = (
-				A5206CBD2BB43CD900A660E4 /* default.json */,
-				A5206CB42BB4351700A660E4 /* FunctionalView */,
-				A5206CB02BB432C400A660E4 /* Presenter */,
-				A5206CAD2BB4320A00A660E4 /* Interactor */,
 				A5206C962BB41DB200A660E4 /* Assets.xcassets */,
-				A5206CB32BB4342C00A660E4 /* View */,
 				A5206CA52BB4264200A660E4 /* DataSource */,
+				A5206CBD2BB43CD900A660E4 /* default.json */,
 				A5206CA02BB4233200A660E4 /* Entities */,
+				A5206CB42BB4351700A660E4 /* FunctionalView */,
+				A5206CAD2BB4320A00A660E4 /* Interactor */,
+				A5206CB02BB432C400A660E4 /* Presenter */,
 				A5206C982BB41DB200A660E4 /* Preview Content */,
+				A5206CC72BB45B1E00A660E4 /* Router */,
+				A5206CB32BB4342C00A660E4 /* View */,
 				A5206C922BB41DB000A660E4 /* VIPER_SwiftUI_Combine_SampleApp.swift */,
 			);
 			path = VIPER_SwiftUI_Combine_Sample;
@@ -123,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				A5206CAE2BB4322D00A660E4 /* TripListInteractor.swift */,
+				A5206CC12BB4592900A660E4 /* TripDetailInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -131,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				A5206CB12BB432D700A660E4 /* TripListPresenter.swift */,
+				A5206CC32BB459C000A660E4 /* TripDetailPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -138,8 +149,9 @@
 		A5206CB32BB4342C00A660E4 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A5206C942BB41DB000A660E4 /* TripListView.swift */,
 				A5206CBF2BB441A800A660E4 /* ContentView.swift */,
+				A5206CC52BB45A3600A660E4 /* TripDetailView.swift */,
+				A5206C942BB41DB000A660E4 /* TripListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -152,6 +164,14 @@
 				A5206CBB2BB4390500A660E4 /* MapView.swift */,
 			);
 			path = FunctionalView;
+			sourceTree = "<group>";
+		};
+		A5206CC72BB45B1E00A660E4 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A5206CC82BB45B3500A660E4 /* TripListRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,12 +252,16 @@
 				A5206CB22BB432D700A660E4 /* TripListPresenter.swift in Sources */,
 				A5206CBC2BB4390500A660E4 /* MapView.swift in Sources */,
 				A5206CB82BB4358C00A660E4 /* ImageDataProvider.swift in Sources */,
+				A5206CC22BB4592900A660E4 /* TripDetailInteractor.swift in Sources */,
 				A5206CB62BB4355000A660E4 /* TripListCell.swift in Sources */,
+				A5206CC92BB45B3500A660E4 /* TripListRouter.swift in Sources */,
 				A5206CBA2BB4382E00A660E4 /* SplitImage.swift in Sources */,
 				A5206CA22BB4234100A660E4 /* Trip.swift in Sources */,
+				A5206CC62BB45A3600A660E4 /* TripDetailView.swift in Sources */,
 				A5206CA72BB4266000A660E4 /* MapDataProvider.swift in Sources */,
 				A5206C952BB41DB000A660E4 /* TripListView.swift in Sources */,
 				A5206C932BB41DB000A660E4 /* VIPER_SwiftUI_Combine_SampleApp.swift in Sources */,
+				A5206CC42BB459C000A660E4 /* TripDetailPresenter.swift in Sources */,
 				A5206CA92BB42AED00A660E4 /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

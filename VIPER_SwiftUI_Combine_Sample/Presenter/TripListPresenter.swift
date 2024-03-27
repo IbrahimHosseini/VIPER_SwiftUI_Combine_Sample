@@ -9,14 +9,16 @@ import SwiftUI
 import Combine
 
 class TripListPresenter: ObservableObject {
-    private let interractor: TripListInteractor
+    private let interactor: TripListInteractor
     
     @Published var trips = [Trip]()
     
     private var cancellables = Set<AnyCancellable>()
     
+    private let router = TripListRouter()
+    
     init(interractor: TripListInteractor) {
-        self.interractor = interractor
+        self.interactor = interractor
         
         interractor.model.$trips
             .assign(to: \.trips, on: self)
@@ -30,10 +32,26 @@ class TripListPresenter: ObservableObject {
     }
     
     func addNewTrip() {
-        interractor.addNewTrip()
+        interactor.addNewTrip()
     }
     
     func deleteTrip(_ index: IndexSet) {
-        interractor.deleteTrip(index)
+        interactor.deleteTrip(index)
     }
+    
+    func linkbuilder<Content: View>(
+        for trip: Trip,
+        @ViewBuilder content: () -> Content
+    ) -> some View {
+        NavigationLink(
+            destination: router.makeDetailView(
+                for: trip,
+                model: interactor.model
+            )
+        ) {
+            content()
+        }
+        
+    }
+    
 }

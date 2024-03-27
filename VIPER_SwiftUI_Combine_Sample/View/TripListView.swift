@@ -13,8 +13,10 @@ struct TripListView: View {
     var body: some View {
         List {
             ForEach(presenter.trips, id: \.id) { item in
-                TripListCell(trip: item)
-                    .frame(height: 240)
+                self.presenter.linkbuilder(for: item) {
+                    TripListCell(trip: item)
+                        .frame(height: 240)
+                }
             }
             .onDelete(perform: presenter.deleteTrip)
         }
@@ -23,7 +25,6 @@ struct TripListView: View {
         .toolbar {
             ToolbarItem(placement: .topBarTrailing, content: presenter.makeAddNewButton)
         }
-        
     }
 }
 
